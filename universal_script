@@ -209,7 +209,7 @@ library.createDivider = function(option, parent)
         BackgroundColor3 = Color3.fromRGB(30, 30, 30),
         BorderSizePixel = 0,
         TextColor3 =  Color3.new(1, 1, 1),
-        TextSize = 11,
+        TextSize = 15,
         Font = Enum.Font.Code,
         TextXAlignment = Enum.TextXAlignment.Center,
         Parent = option.main
@@ -219,8 +219,8 @@ library.createDivider = function(option, parent)
         if i == "Text" then
             if v then
                 option.title.Text = tostring(v)
-                option.title.Size = UDim2.new(0, textService:GetTextSize(option.title.Text, 11, Enum.Font.Code, Vector2.new(9e9, 9e9)).X + 12, 0, 20)
-                option.main.Size = UDim2.new(1, 0, 0, 11)
+                option.title.Size = UDim2.new(0, textService:GetTextSize(option.title.Text, 15, Enum.Font.Code, Vector2.new(9e9, 9e9)).X + 12, 0, 20)
+                option.main.Size = UDim2.new(1, 0, 0, 18)
             else
                 option.title.Text = ""
                 option.title.Size = UDim2.new()
